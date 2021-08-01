@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile of this website</title>
+     <!-- link with font-awesome -->
+     <link rel="stylesheet" href="../asset/css/all.min.css">
+     <!-- link with externel css file (all)-->
+     <link rel="stylesheet" href="../style.css">
+     <!-- externel css  for only this page-->
+     <link rel="stylesheet" href="account.css">
+</head>
+<body>
+    <header  id="account">
+        <i id="nav-icon" class="fa fa-bars" aria-hidden="true"></i>
+        <nav>
+            <div class="nav-logo">
+                <a href="../home.html"><span>web</span><span>store</span></a>
+            </div>
+            <ul class="nav-links ">
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="account.html">Account</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+        <div  class="about-header">
+            <div class="head-section">
+                <h3 id="login">login <span id="loginspan" class="underline"></span></h3>
+                <h3 id="register">register <span id="registerspan"></span></h3>
+            </div>
+           <div class="body-section">
+                <div class="login">
+                        <input type="email" placeholder="email">
+                        <input type="password" placeholder="password">
+                        <button>login</button>
+                        <a class="gotoReg" href="#" onclick="add()">create a new account??</a>
+                </div>
+                <div id="reg" class="register">
+                        <input type="text" placeholder="username">
+                        <input type="email" placeholder="email">
+                        <input type="password" placeholder="password">
+                        <input type="password" placeholder="Re-enter password">
+                        <button>submit</button>
+                        <h4>have a account??<a href="#" onclick="remove()">login</a></h4>
+                </div>
+           </div>
+        </div>
+    </header>
+
+     <!-- footer section starts here -->
+     <footer id="footer">
+        <div class="footer-container">
+           <div class="foot-items">
+                <h3>about us</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia unde cupiditate itaque repellendus? Velit, vitae ipsum minus sequi necessitatibus architecto?</p>
+           </div>
+           <div class="foot-items">
+                <h3>contact us</h3>
+                <p>mobile : 01581192171</p>
+                <p>gmail : sm8106418@gmail.com</p>
+            </div>
+            <div class="foot-items">
+                <h3>quick links</h3>
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="#about-product">About</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="account.html">Account</a></li>
+                <li><a href="#footer">Contact</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </div>
+        </div>
+    </footer>
+    <!-- footer section ends here -->
+
+
+
+  <script src="../script.js"></script>
+  <script src="account.js"></script>
+</body>
+</html>

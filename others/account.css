@@ -1,0 +1,117 @@
+
+html{
+    font-size: 62.5%;
+}
+nav{
+    z-index: 2;
+}
+#nav-icon{
+    z-index: 3;
+}
+#account .about-header{
+    width: 30rem;
+    height: 40rem;
+    background: white;
+    padding:1rem;
+    overflow: hidden;
+    border-radius: 0.7rem;
+    box-shadow: 0 0 3rem 1.5rem rgba(0, 0, 0, 0.4);
+}
+input{
+    width: 25rem;
+    height: 4rem;
+    padding:1rem;
+    margin: 1.2rem ;
+    outline: none;
+    border: 1px solid tomato;
+    border-radius: 2rem;
+    color:tomato;
+    font-size: 1.5rem;
+    display: block;
+}
+.head-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#account h3{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin:1.5rem 0.7rem 3rem 0.7rem;
+    position: relative;
+    padding:1rem;
+}
+#account h3:hover{
+    cursor:pointer;
+}
+.underline{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: tomato;
+    width: 110%;
+    height: 0.2rem;
+    transition: 0.3s;
+}
+#account button{
+    width: 80%;
+    display: block;
+    margin: 1rem auto;
+    background: tomato;
+    padding:1rem;
+    font-size: 1.5rem;
+    color: white;
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+}
+#account button:hover{
+    cursor: pointer;
+}
+#account h4{
+    text-transform: capitalize;
+    color: grey;
+    font-size: 1.4rem;
+    text-align: center;
+}
+.about-header a{
+    text-transform: capitalize;
+    color: tomato;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+.body-section{
+    padding:1rem;
+    margin-top: 1rem;
+    width: 100%;
+    position: relative;
+    height: 100%;
+}
+.login{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.register{
+    position: absolute;
+    top: 0;
+    right: -250%;
+    transition: 0.5s;
+}
+.addReg{
+    right: 0;
+}
+.addLog{
+    position: absolute;
+    top: 0;
+    left: -170%;
+}
+.gotoReg{
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+}

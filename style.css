@@ -1,0 +1,425 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+header{
+    background-image: url(asset/header.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+/* nav section starts here   */
+nav{
+    background:rgba(0, 0, 0, 0.6);
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    padding:0.5rem;
+    position: relative;
+    z-index: 2;
+}
+.nav-logo{
+    margin-left: 3rem;
+}
+.nav-logo a{
+    text-decoration: none;
+}
+.nav-logo span{
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    
+}
+.nav-logo span:first-child{
+    color: tomato;
+}
+.nav-logo span:last-child{
+    color: white;
+}
+.nav-links{
+    display:flex;
+    align-items:center;
+    margin-right: 2rem;
+}
+.nav-links li{
+    list-style: none;
+    padding:0.5rem;
+    margin: 0rem 0.5rem;
+}
+.nav-links li a{
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    transition:0.3s;
+}
+.nav-links li a:hover{
+    color: tomato;
+}
+#nav-icon{
+    font-size: 2rem;
+    color: white;
+    top: 0.8rem;
+    right: 4rem;
+    position: absolute;
+    display: none;
+    z-index: 3;
+}
+#nav-icon:hover{
+    cursor:pointer;
+}
+@media screen and (max-width:768px) {
+    #nav-icon{
+        display: block;
+    }
+    nav .nav-links{
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: -2rem;
+        background:rgba(0, 0, 0, 0.6);
+        width: 100%;
+        line-height: 2.4rem;
+        height: 0vh;
+        overflow: hidden;
+        transition: 0.3s;
+    }
+}
+nav .btn{
+    height: 40vh;
+}
+.about-header{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height:auto;
+    background: rgba(0, 0, 0, 0.4);
+    padding:2rem;
+    text-align: center;
+}
+.about-header h1{
+    color:tomato;
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding:1rem;
+    text-align: center;
+}
+.about-header p{
+    font-size: 1.5rem;
+    color: white;
+    margin: 1rem 0rem 2rem 0rem;
+}
+.about-header .link{
+    padding:0.8rem;
+    color: tomato;
+    background: white;
+    text-decoration: none;
+    font-size: 2rem;
+    text-transform: uppercase;
+    border-radius: 2rem;
+    margin: 1rem 0.5rem;
+    transition:0.3s;
+}
+@media screen and (max-width:768px) {
+    .about-header .link{
+        display: block;
+    }
+}
+
+.about-header .link:hover{
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* feature product section starts here  */
+#feature-product {
+    padding:2rem;
+}
+#feature-product h3, #latest-product h3{
+    font-size: 2rem;
+    color: #27f;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    padding:0.3rem;
+    margin: 2rem 0rem;
+    position: relative;
+}
+#feature-product h3::after,#latest-product h3::after{
+    content: "";
+    position: absolute;
+    width: 16rem;
+    height: 0.3rem;
+    background: #27f;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#feature-product .feature-product-container{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: wrap;
+    margin: 1rem 0rem;
+}
+.feature-product-item{
+    flex-basis: 24%;
+    margin: 1rem 0.4rem;
+    overflow: hidden;
+    height: 40rem;
+}
+@media screen and (max-width:992px) {
+    .feature-product-item {
+        flex-basis: 46%;
+    }
+}
+@media screen and (max-width:768px) {
+    .feature-product-item {
+        flex-basis: 97%;
+    }
+}
+.feature-product-item img{
+    width: 100%;
+    height: 70%;
+    transition: 0.5s;
+}
+.feature-product-item img:hover{
+    transform: scale(1.1);
+}
+.feature-product-item h2, .latest-product-items h2{
+    color: #27f;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    padding:0.5rem;
+    margin: 0.3rem 0rem;
+}
+.feature-product-item i, .latest-product-items i{
+    color: tomato;
+    font-size: 1.5rem;
+    padding:0.1rem;
+    margin: 0.3rem 0rem;
+}
+.feature-product-item p, .latest-product-items p{
+    font-weight: 400;
+    font-size: 1.5rem;
+    padding:0.5rem;
+    margin: 0.3rem 0rem;
+}
+
+/* latest product section starts here  */
+#latest-product{
+    padding:1rem;
+    margin: 1rem 0rem;
+}
+#latest-product h3{
+    margin-bottom: 4rem;
+}
+#latest-product h3::after{
+    width: 20rem !important;
+}   
+#latest-product .latest-product-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+@media screen and (max-width:992px) {
+    #latest-product .latest-product-container{
+        grid-template-columns: auto auto;
+    }
+}
+@media screen and (max-width:768px) {
+    #latest-product .latest-product-container{
+        grid-template-columns: auto;
+    }
+}
+.latest-product-container .latest-product-items{
+    width: 90%;
+    height: 40rem;
+    transition: 0.5s;
+    margin: 1rem auto;
+}
+.latest-product-container .latest-product-items:hover{
+    transform: translateY(-1rem);
+}
+.latest-product-items img{
+    width: 100%;
+    height: 70%;
+}
+.latest-product-items h2{
+    color:tomato;
+}
+.latest-product-items i{
+    color: #27f;
+}
+
+/* public comments section starts here  */
+#comment{
+    padding: 1rem;
+    margin: 1rem 0rem;
+    background: rgb(196, 194, 194);
+}
+#comment .comment-container{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.comment-container .comment-itmes{
+    background: white;
+    margin: 1rem 0.5rem;
+    text-align: center;
+    flex-basis: 1;
+    padding: 2rem;
+    width: 30rem;
+}
+
+.comment-itmes q{
+    font-style: italic;
+    font-size: 2rem;
+}
+.comment-itmes p{
+    font-size: 1.3rem;
+    opacity: 0.8;
+    font-style: italic;
+    text-align: justify;
+}
+.comment-itmes img{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    margin: 1rem auto;
+    display: block;
+    border: 1px solid #27f;
+}
+.comment-itmes h4{
+    color: #27f;
+    font-size: 2rem;
+    text-transform: capitalize;
+    padding: 0.5rem;
+}
+
+/* about section starts here  */
+#about-product{
+    padding: 2rem;
+    background: tomato;
+}
+#about-product h3{
+    color: white;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 1rem 0rem;
+}
+
+#about-product .watch,
+#about-product .shoes{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.img-sector, .text-sector{
+   flex-basis: 47%;
+   margin: 1rem 0.5rem;
+}
+@media screen and (max-width:768px) {
+    .img-sector, .text-sector{
+        flex-basis: 96%;
+     }
+}
+#about-product .watch h4,
+#about-product .shoes h4{
+    font-size: 2rem;
+    color: white;
+    text-transform: capitalize;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.2rem;
+    text-align: center;
+    padding: 0.5rem;
+    margin: 0.5rem 0rem;
+}
+#about-product .watch p,
+#about-product .shoes p{
+    color: grey;
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin: 0.5rem 0rem;
+}
+.img-sector img{
+    width: 100%;
+    height: 100%;
+}
+
+/* design footer  */
+footer {
+    padding: 2rem;
+    background: #001;
+    position: relative;
+}
+.footer-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.foot-items{
+    flex-basis: 30%;
+    margin: 1rem 0.5rem;
+    padding: 0.5rem;
+    text-align: center;
+}
+@media screen and (max-width:992px) {
+    .foot-items{
+        flex-basis: 50%;
+    }
+}
+@media screen and (max-width:768px) {
+    .foot-items{
+        flex-basis: 95%;
+    }
+}
+.footer-container h3{
+    color: white;
+    font-size: 2rem;
+    font-family: sans-serif;
+    letter-spacing: 0.1rem;
+    text-transform: capitalize;
+    margin: 1rem auto;
+}
+.footer-container p{
+    color: grey;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+}
+.foot-items li{
+    list-style: none;
+    margin: 1rem 0rem;
+}
+.foot-items a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color:tomato;
+}
+
+
+#scroll{
+    padding: 1rem;
+    border-radius: 50%;
+    background: tomato;
+    font-size: 2.5rem;
+    color: white;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+}
+#scroll:hover{
+    cursor: pointer;
+}
