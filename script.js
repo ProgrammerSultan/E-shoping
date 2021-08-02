@@ -1,4 +1,7 @@
-
+//pre loader
+window.addEventListener("load", () =>{
+    document.querySelector(".load").style.display = "none"
+})
 //works with responsive navbar
 const navIcon = document.getElementById("nav-icon")
 let navlinks = document.querySelector(".nav-links")

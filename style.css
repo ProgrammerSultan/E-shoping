@@ -7,6 +7,13 @@ html{
     font-size: 62.5%;
     scroll-behavior: smooth;
 }
+.load{
+    width:100vw;
+    height: 100vh;
+    background: white;
+    display: grid;
+    place-items: center;
+}
 header{
     background-image: url(asset/header.jpg);
     background-position: center;
